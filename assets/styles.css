@@ -1,0 +1,17 @@
+body {
+  font-family: verdana;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+nav a {
+  color: #333333;
+  padding: 0.5rem;
+}
+
+nav a.selected {
+  border: solid 1px #333333;
+}
