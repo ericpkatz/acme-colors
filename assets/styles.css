@@ -15,3 +15,30 @@ nav a {
 nav a.selected {
   border: solid 1px #333333;
 }
+
+#colors li {
+  text-shadow: 1px 1px #333333;
+}
+
+main {
+  display: flex;
+  margin: 1rem;
+}
+
+main > * {
+  flex: 1;
+}
+
+form {
+  border: solid 1px #333333;
+  display: flex;
+  flex-direction: column;
+}
+
+form > * {
+  margin: 1rem;
+}
+
+input, button {
+  height: 2rem;
+}

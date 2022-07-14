@@ -4,6 +4,9 @@ import { Provider, connect } from 'react-redux';
 import { HashRouter as Router, Route } from 'react-router-dom';
 import store, { fetchColors } from './store';
 import Nav from './Nav';
+import Colors from './Colors'; 
+import Home from './Home';
+import ColorFormEdit from './ColorFormEdit';
 
 class _App extends Component{
   componentDidMount(){
@@ -13,6 +16,9 @@ class _App extends Component{
     return (
       <div>
         <Route component={ Nav } />
+        <Route path='/' exact component={ Home } />
+        <Route exact path='/colors' component={ Colors } />
+        <Route exact path='/colors/:id' component={ ColorFormEdit } />
       </div>
     );
   }
